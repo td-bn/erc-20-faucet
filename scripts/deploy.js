@@ -2,8 +2,8 @@ const hre = require("hardhat");
 
 async function main() {
  
-  const [deplyoer] = await hre.ethers.getSigners();
-  console.log("Deoploying with account address: ", deplyoer.address)
+  const [deployer] = await hre.ethers.getSigners();
+  console.log("Deoploying with account address: ", deployer.address)
 
   // We get the contract to deploy
   const LearnToken = await hre.ethers.getContractFactory("LearnToken");
