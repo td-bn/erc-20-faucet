@@ -6,6 +6,7 @@ import Message from './Message';
 // Pattern to get deployed address?
 let tokenAddress = '0xA94c1FCB684d4b6D95b34D149d05ceF0b00b3414';
 
+
 const Faucet = (props) => {
     const [balance, setBalance] = useState();
     const [showBalance, setShowBalance] = useState(false);
