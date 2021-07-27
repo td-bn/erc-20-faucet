@@ -3,7 +3,7 @@ import { ethers } from "ethers";
 import { Card, Button, Container, Row, Col} from "react-bootstrap";
 
 // Pattern to get deployed address?
-let tokenAddress = '0xF3388099C0d9C3C1aA0392CBECa8EB18eAbC25Ca';
+let tokenAddress = '0xA94c1FCB684d4b6D95b34D149d05ceF0b00b3414';
 
 const TokenSend = (props) => {
     const [userAccount, setUserAccount] = useState();

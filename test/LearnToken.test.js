@@ -31,4 +31,14 @@ describe("LearnToken", function() {
     balance = await learnToken.balanceOf(other.address);
     expect(balance).equals('10');
   });
+
+  it("should transfer tokens", async function() {
+    let balance;
+    balance = await learnToken.balanceOf(other.address);
+    expect(ethers.utils.formatEther(balance)).equals('0.0');
+
+    await learnToken.transfer(other.address, 10);
+    balance = await learnToken.balanceOf(other.address);
+    expect(balance).equals('10');
+  });
 });
